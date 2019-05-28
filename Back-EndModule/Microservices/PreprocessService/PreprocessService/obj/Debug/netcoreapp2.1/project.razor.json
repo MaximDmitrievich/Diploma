@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Maxim.Eremin\\source\\repos\\Diploma\\Back-EndModule\\Microservices\\DBService\\DBService\\DBService.csproj",
+  "FilePath": "c:\\Users\\Maxim.Eremin\\source\\repos\\Diploma\\Back-EndModule\\Microservices\\PreprocessService\\PreprocessService\\PreprocessService.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2678,6 +2678,6 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "DBService",
+  "RootNamespace": "PreprocessService",
   "Documents": []
 }
