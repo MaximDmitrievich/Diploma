@@ -1,0 +1,26 @@
+version: '3'
+services:
+  neuralnetwork:
+    build: 
+      context: ./NN
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+  cache:
+    build:
+      context: ./Microservices/CacheService
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8080"
+  db:
+    build:
+      context: ./Microservices/DBService
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8080"
+  preprocess:
+    build:
+      context: ./Microservices/PreprocessService
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8080"
