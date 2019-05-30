@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import sys
 from math import floor, sqrt
 import decimal
-import keras
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout, Conv2D, MaxPooling2D, Flatten, LSTM, Conv1D, GlobalAveragePooling1D, MaxPooling1D, GlobalMaxPooling1D, AveragePooling1D
-from keras import regularizers
+#import keras
+#from keras.models import Sequential
+#from keras.layers import Dense, Activation, Dropout, Conv2D, MaxPooling2D, Flatten, LSTM, Conv1D, GlobalAveragePooling1D, MaxPooling1D, GlobalMaxPooling1D, AveragePooling1D
+#from keras import regularizers
 
 def mathFilter(y):
     rng = range(1, len(y) - 1)
@@ -21,9 +21,9 @@ def flooring(x):
     return floor(decimal.Decimal(x))
 
 def main():
-    data = np.fromfile("../../DataSets/I09.dat")
+    data = np.fromfile("../../DataSets/I15.dat")
     a = 0
-    b = len(data)
+    b = 2000
 
     x = np.linspace(a, b, num=b-a)
     y = []
@@ -32,10 +32,10 @@ def main():
     
 
     y = mathFilter(mathFilter(mathFilter(mathFilter(y))))
+    y = mathFilter(mathFilter(mathFilter(mathFilter(y))))
+    y = mathFilter(mathFilter(mathFilter(mathFilter(y))))
+    y = mathFilter(mathFilter(mathFilter(mathFilter(y))))
 
-    model = Sequential()
-
-    model.add(Conv2D)
 
     plt.plot(x, y)
     plt.show()
